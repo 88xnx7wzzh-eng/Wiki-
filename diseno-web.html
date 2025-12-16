@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki | Diseño WEB</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-interna">
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>wiki</h1>
+            </div>
+            <nav class="nav-desktop">
+                <a href="experiencia-usuario.html" class="active">Experiencia de Usuario</a>
+                <a href="diseno-web.html">Diseño WEB</a>
+                <a href="design-thinking.html">Design Thinking</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+        </div>
+        <form class="search-bar">
+            <input type="search" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+    </header>
+
+    <nav class="nav-mobile">
+        <a href="index.html">Inicio</a>
+        <a href="experiencia-usuario.html">Experiencia de Usuario</a>
+        <a href="diseno-web.html">Diseño WEB</a>
+        <a href="design-thinking.html">Design Thinking</a>
+    </nav>
+
+    <main class="container interna">
+        <h2 class="titulo-seccion">Diseño WEB</h2>
+        
+        <div class="contenido">
+            <p>Aquí va todo el texto de storytelling que hayan preparado sobre UX...</p>
+            <img src="img/ux-1.jpg" alt="Ilustración UX" class="img-float">
+            <p>Más texto explicativo...</p>
+            
+            <img src="img/ux-2.png" alt="User Experience blocks" class="img-block">
+            <img src="img/ux-3.jpg" alt="Estrella y mano" class="img-block">
+            <img src="img/ux-4.jpg" alt="Pantalla móvil" class="img-block">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 | Términos | Privacidad</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-mobile').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
